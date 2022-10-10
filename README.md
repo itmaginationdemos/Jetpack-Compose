@@ -15,4 +15,4 @@
 
 ### This is the repository showcasing **some** of the new features of Jetpack Compose 1.1, and Material Compose 3.
 
-Special thanks to [Jan Radzikowski](https://www.linkedin.com/in/jan-radzikowski-546269100/) for preparing the demo.
+Special thanks to [Jan Radzikowski](https://www.linkedin.com/in/jan-radzikowski-546269100/), and [Karlo Karagic](https://www.linkedin.com/in/karlo-karagi%C4%87-76031589/) for preparing the demo.
