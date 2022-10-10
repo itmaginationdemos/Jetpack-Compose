@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3Api::class)
+
 package com.example.jetpackcomposeshowcase
 
 import android.os.Bundle
@@ -18,10 +20,11 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.SmallTopAppBar
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateListOf
@@ -80,7 +83,7 @@ fun MyScreenContent(counterColors: SnapshotStateList<Color>) {
         mutableStateOf(counterColors.first())
     }
 
-    SmallTopAppBar(
+    TopAppBar(
         title = {
             Text(
                 text = "Jetpack Compose Showcase",
@@ -107,7 +110,8 @@ fun MyScreenContent(counterColors: SnapshotStateList<Color>) {
             selectedCounterColor.value,
             onSelected = { selectedColor ->
                 selectedCounterColor.value = selectedColor
-            })
+            }
+        )
     }
 }
 
